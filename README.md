@@ -29,7 +29,7 @@ Sistema de gestão desenvolvido em **Java Swing** com persistência em **Microso
 | **Script SQL (oficial)** | [`sqlserver.sql`](sqlserver.sql) · [`database.sql`](database.sql) |
 | **Repositório** | https://github.com/kevinbarbim/sistema-pedidos-suplementos-sqlserver |
 | **Diagrama ER** | [`modelagem-banco.png`](modelagem-banco.png) |
-| **Conector JDBC** | `mssql-jdbc-12.6.1.jre11.jar` (incluso na raiz; [`download-jdbc.ps1`](download-jdbc.ps1) só se precisar baixar de novo) |
+| **Conector JDBC** | `mssql-jdbc-12.6.1.jre11.jar` |
 
 ---
 
