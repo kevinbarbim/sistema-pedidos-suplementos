@@ -1,0 +1,22 @@
+# NetBeans
+/nbproject/private/
+
+# Build
+/build/
+/dist/
+/bin/
+
+# Bytecode (nunca em src)
+**/*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# JDBC (baixar com download-jdbc.ps1; opcional versionar)
+# mssql-jdbc-12.6.1.jre11.jar
