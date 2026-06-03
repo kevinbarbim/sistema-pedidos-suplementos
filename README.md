@@ -29,7 +29,7 @@ Sistema de gestão desenvolvido em **Java Swing** com persistência em **Microso
 | **Script SQL (oficial)** | [`sqlserver.sql`](sqlserver.sql) · [`database.sql`](database.sql) |
 | **Repositório** | https://github.com/kevinbarbim/sistema-pedidos-suplementos-sqlserver |
 | **Diagrama ER** | [`modelagem-banco.png`](modelagem-banco.png) |
-| **Conector JDBC** | `mssql-jdbc-12.6.1.jre11.jar` (ver [`download-jdbc.ps1`](download-jdbc.ps1)) |
+| **Conector JDBC** | `mssql-jdbc-12.6.1.jre11.jar` (incluso na raiz; [`download-jdbc.ps1`](download-jdbc.ps1) só se precisar baixar de novo) |
 
 ---
 
@@ -58,9 +58,9 @@ SSMS → Arquivo → Abrir → sqlserver.sql → Executar (F5)
 
 ### 2. Driver JDBC e conexão
 
-```powershell
-.\download-jdbc.ps1
-```
+O JAR `mssql-jdbc-12.6.1.jre11.jar` já vem na raiz do projeto (clone pronto para NetBeans).
+
+Se o arquivo não existir, execute: `.\download-jdbc.ps1`
 
 Edite `src/DAO/ConexaoDAO.java`: usuário `sa` e senha da sua instância (`localhost:1433`, banco `sistema_pedidos`).
 
@@ -74,8 +74,7 @@ NetBeans → Abrir projeto → Clean and Build (Shift+F11) → Run (F6)
 <summary><strong>Executar via terminal (PowerShell)</strong></summary>
 
 ```powershell
-cd "C:\caminho\sistema-pedidos-suplementos"
-.\download-jdbc.ps1
+cd "C:\caminho\sistema-pedidos-suplementos-sqlserver"
 
 New-Item -ItemType Directory -Force build\classes | Out-Null
 javac -encoding UTF-8 -cp "mssql-jdbc-12.6.1.jre11.jar" -d build\classes `
